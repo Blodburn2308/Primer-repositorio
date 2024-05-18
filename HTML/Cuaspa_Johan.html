@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaspa Johan Prueba</title>
+
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+    <body>
+        <h1>Factura </h1>
+
+        <form class="formulario-datos" method="POST">
+            <div class="fecha-contendor">
+                <label for="fecha">Fecha de factura:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <br>
+            <!-- Sección de información del cliente -->
+            <section id="cliente">
+                <h2>Información Cliente</h2>
+                <label for="nombreCliente">Nombre:</label>
+                <input type="text" id="nombreCliente" name="nombreCliente" required placeholder="Johan Cuaspa">
+
+                <label for="CI">Rif o CI:</label>
+                <input type="number" id="CI" name="cedula" required placeholder="1004998603">
+
+                <label for="direccionCliente">Domicilio fiscal:</label>
+                <input type="text" id="direccionCliente" name="direccionCliente" required placeholder="Ibarra">
+                <br>
+                <label for="telefono">Teléfono</label>
+                <input type="number" id="telefono" name="telefono" required maxlength="10" placeholder="0969672237">
+                <label for="corre">Teléfono</label>
+                <input type="email" id="correo" name="correo" placeholder="cuaspajohan@gmail.com">
+
+
+            </section>
+
+            <!-- Formas de pago -->
+            <section id=" forma de pago">
+                <h2>Forma de pago</h2>
+                <input type="radio" id="efectivo" name="metodopago" required>
+                <label for="">Efectivo</label>
+
+                <input type="radio" id="tdebito" name="metodopago" required>
+                <label for="">T. Débito</label>
+                <input type="radio" id="tcredito" name="metodopago" required>
+                <label for="">T. Crédito</label>
+                <input type="radio" id="cheque" name="metodopago" required>
+                <label for="">Cheque</label>
+
+                <h2>Condiciones de pago</h2>
+                <input type="radio" id="contado" name="condicionpago" required>
+                <label for="">Contado</label>
+                <input type="radio" id="credito" name="condicionpago" required>
+                <label for="">Credito</label>
+            </section>
+            <!-- Detalles de la factura, descripción -->
+
+            <section id="detalles">
+                <h2>Detalles</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cant.</th>
+                            <th>Descripción</th>
+                            <th>Precio Unit.</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <form action=""> <input type="number"></form>
+                            </td>
+                            <td>Descripción</td>
+                            <td>Precio unitario</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td> 1 </td>
+                            <td>Descripción</td>
+                            <td>Precio unitario</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Descripción</td>
+                            <td>Precio unitario</td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>Exento</td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>Base imponible</td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                        </tr>
+                        <tr>
+                            <td>IVA %</td>
+                            <td></td>
+                            <td></td>
+                            <td>Total </td>
+                        </tr>
+                        <tr>
+                            <td>Total a pagar</td>
+                            <td></td>
+                            <td></td>
+                            <td>Total final </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <label for=""> Número de control </label>
+                <form action=""> <input type="number"> </form>
+
+            </section>
+            <div class="btnenviar">
+                <input type="submit" value="Imprimir Factura">
+            </div>
+
+        </form>
+
+
+        <footer>
+            <p>Facultad de Ingenieria y Ciencias Aplicadas</p>
+            <p>FICA</p>
+            <p>Empresa UTN</p>
+            <P>Teléfonos: 0969672237</P>
+            <p>Direccion: Av. 17 de Julio </p>
+            <p>Email: jscuaspac@utn.edu.ec</p>
+            <p>Gracias por confiar en UTN</p>
+
+        </footer>
+
+    </body>
+
+
+</html>

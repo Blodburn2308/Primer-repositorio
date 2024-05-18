@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    padding: 40px;
+    margin: 0;
+    /* Agregamos este estilo para eliminar cualquier margen predeterminado */
+    color: white;
+    text-align: center;
+    background-color: #112d4e;
+    position: unset;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagen {
+    padding: 0;
+    width: 100px;
+    border: solid #164884 8px;
+}
+
+header {
+    width: 100%;
+    padding: 40px;
+    color: white;
+    text-align: center;
+    background-color: #112d4e;
+}
+
+nav ul {
+    background-color: #164884;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: all ease-in-out 500ms;
+}
+
+nav ul a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background: #112d4e;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.arbol {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+
+.arbol ul {
+    padding-top: 20px;
+    position: relative;
+    transition: .5s;
+}
+
+.arbol li {
+    display: inline-table;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 10px;
+    transition: .5s;
+}
+
+.arbol li:before,
+.arbol li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 51%;
+    height: 10px;
+}
+
+.arbol li:after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+.arbol li:only-child:after,
+.arbol li:only-child:before {
+    display: none;
+
+}
+
+.arbol li:only-child {
+    padding-top: 0;
+}
+
+.arbol li:first-child::before,
+.arbol li:last-child::after {
+    border: 0 none;
+}
+
+.arbol li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.arbol li:first-child::before {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.arbol ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+
+.arbol a {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: inline-grid;
+    border-radius: 5px;
+    text-decoration-line: none;
+    border-radius: 5px;
+    transition: .5s;
+    transform-origin: center;
+}
+
+.arbol a img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px !important;
+    border-radius: 100px;
+    margin: auto;
+    transition: .5s;
+    /* Añadimos una transición para una animación suave */
+}
+
+.arbol a span {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #666;
+    padding: 8px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+
+}
+
+/* Seccion Hover */
+
+.arbol li a:hover,
+.arbol li a:hover img,
+.arbol li a:hover span,
+.arbol li a:hover+ul li a {
+    background-color: #c8e4f8;
+    color: #000;
+    border: 1px solid #94a0b4;
+    box-shadow: 0px 0px 8px -5px #5f5f5f;
+}
+
+.arbol li a:hover+ul li::after,
+.arbol li a:hover+ul li:before,
+.arbol li a:hover+ul:before,
+.arbol li a:hover+ul ul::before {
+    border-color: #94a0b4;
+}
+
+.arbol a:hover {
+    transform: scale(1.2);
+    /* Escala aumentada al pasar el mouse */
+}
+
+.arbol a:hover img {
+    transform: scale(1.2);
+    /* Escala aumentada al pasar el mouse */
+}

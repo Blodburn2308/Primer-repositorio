@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title> Mi primera web </title>
+    <meta charset="utf-8">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <!-- th los hace centrados -->
+                <th> Producto </th>
+                <th> Precio </th>
+
+            <tr>
+        </thead>
+
+        <tbody>
+            <!-- td aparecen en la iquierda -->
+            <td> Hola bits</td>
+            <td>Gratis</td>
+            </tr>
+            <tr>
+                <td> Chanchito</td>
+                <td>19,90</td>
+            </tr>
+            <tr>
+                <td> Johan Sebastian Cuaspa</td>
+                <td>29.00</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <td></td>
+            <td>Total 49.00</td>
+        </tfoot>
+
+    </table>
+
+    <!-- UL es lista no ordenada -->
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+    </ul>
+    <!-- OL es lista ordenada -->
+    <ol>
+        <li value="50">Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+        <li>
+            <ol>
+                <li style="list-style-type: lower-alpha;">sub elemento 1</li>
+                <li style="list-style-type: lower-roman;">sub elemento 2</li>
+                <li style="list-style-type: lower-latin;">sub elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+
+    <form action="/formulario" method="post">
+        <label for="Nombre">Nombre</label>
+        <input value="chanchito" type="text" id="Nombre" name="LALA" placeholder="Nombre" />
+        <br>
+        <label for="Apellido">Apellido</label>
+        <input value="Feliz Johan" type="text" id="Apellido" name="Apellido" placeholder="Apellido" />
+        <br>
+        <label for="comentario">Comentario</label>
+        <textarea cols="20" rows="5" id="comentario" name="comentario"
+            placeholder="Escriba aqui"> Escriba su texto</textarea>
+        <br>
+        <button type="button">
+            Tipo boton </button>
+        <button type="reset"> Tipo reset </button>
+        <button type="submit"> Tipo submit </button>
+    </form>
+
+
+    <h1 style="color: crimson;"> Mi primer heading</h1>
+    <h2> Mi segundo heading</h2>
+    <h3> Mi tercert heading</h3>
+    <h4> Mi cuarto heading</h4>
+    <h5> Mi quinto heading</h5>
+    <h6> Mi sexta heading</h6>
+    <p> Bienvenidos a como criat a tu perro </p>
+    <p> Segunda párrafo</p>
+    <hr>
+    <h2> Como hacerlo </h2>
+    <p style="font-size: 3em;">
+        Un poco más <span style=" color: rgba(228, 19, 247, 0.576)"> de texto, un poco mas,
+        </span> un poco mas
+        <br> un poco mas un <br> poco mas prueba
+    </p>
+    <!-- Este texto es un comentario -->
+    <a target="_blank" href="https://www.halconsat.com">Dale click</a>
+    <img src="C:\Users\ASUS\Desktop\UTN\3er semestre\Herramientas de programacion\Workspace\img\Rick.jpg"
+        width="1080" />
+    <hr>
+
+    <div> Hola esto es un div</div>
+    <div> Este es el segunda div</div>
+    <input type="color" name="color" />
+
+    <!-- <cite></cite>  Funcionar para citar autores-->
+    <!-- <time datetime=""></time> Representa fecha en formato legible para el usuario -->
+    <!-- Sección de información del proveedor -->
+    <section id="proveedor">
+        <h2>Información del Proveedor</h2>
+        <label for="nombreProveedor">Nombre:</label>
+        <input type="text" id="nombreProveedor" name="nombreProveedor" required>
+
+        <label for="direccionProveedor">Dirección:</label>
+        <input type="text" id="direccionProveedor" name="direccionProveedor" required>
+    </section>
+
+</body>
+
+</html>

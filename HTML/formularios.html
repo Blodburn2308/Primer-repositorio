@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Página Formularios</title>
+	<meta charset="utf-8">
+	<meta name="keywords" content="suelo, papas, frejol, maiz">
+	<meta name="author" content="Fernando Garrido">
+	<meta name="copyright" content="UTN ">
+	<meta name="robots" content="index">
+	<meta name="robots" content="follow">
+	<link rel="stylesheet" type="text/css" href="../styles/style1.css">
+</head>
+
+<body>
+	<h1 class="color-red">Mi H1</h1>
+	<div>
+		<form name="Factura" id="datos" method="post">
+			<label for="Nombre">*Nombre: </label><input type="text" name="nombre" placeholder="Nombre"><br>
+			<Label>Contraseña: </Label><input type="password" name="clave"><br>
+			<label for="">Número Casa: </label><input type="number" name="valor"> <br>
+			<label for="">Correo: </label><input type="email" name="correo"><br>
+			<label for="">Telefono: </label><input type="tel" name="telefono" placeholder="09696722586"><br>
+			<label for=""> Color fav <input type="color" name="color"> </label>
+			<input type="range" name="rango" min="1" max="5">
+			<input type="date" name="fecha">
+			<input type="time" name="hora">
+			<input type="button" name="opcion" value="Aceptar">
+			<input type="radio" id="male" name="gender" value="male">
+			<textarea>Este es un campo </textarea>
+
+			<label for="cars">Choose a car:</label>
+			<select id="cars" name="cars" size="4" multiple>
+				<option value="auto volvo">Volvo</option>
+				<option value="auto saab">Saab</option>
+				<option value="auto fiat">Fiat</option>
+				<option value="auto audi">Audi</option>
+			</select>
+			<input type="submit" name="enviar" value="Guardar Datos en Base Datos"><br> <br>
+			<label for=""> Escriba su comentario <textarea name="texto_area" id="" cols="30" rows="10"></textarea>
+			</label>
+
+		</form>
+		<p style="color:rgb(2, 180, 17)">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quis qui natus inventore molestias cum
+			odit ipsam asperiores dolorem possimus? Saepe
+			maiores labore perferendis veniam minima praesentium dolorem deserunt reiciendis.
+		</p>
+	</div>
+
+	<p>
+		A ESTE TAMBIEN LE CAMBIA EL COLOR
+	</p>
+	<div>
+		<a href="https://www.utn.edu.ec">Ir a page UTN</a>
+		<br>
+
+		<a href="./page2.html">Ir a Page2</a>
+		<img src="../img/Rick.jpg" alt="Casa" width="500">
+		<p> <button type="submit">Subir </button> </p>
+	</div>
+	.block$]
+
+	<form>
+		<label for="fname"><b>F</b>irst name:</label><br>
+		<input type="text" id="fname" name="fname" required="true"><br>
+		<label for="lname"><i><b>N</b>ame:</i></label><br>
+		<input type="text" id="lname" name="lname">
+		<input type="submit" name="enviar">
+		<button type="button" onmouseover="alert('Hello World!')">Click Me!</button>
+		<datalist id="datos_telefono">
+			<option value="123123123" label="Teléfono 1">
+			<option value="456456456" label="Teléfono 2">
+		</datalist>
+		<p><label>Teléfono: <input type="tel" name="telefono" list="datos"></label></p>
+		<p><label>Código Postal: <input pattern="[0-9]{5}" name="cp" title="Inserte su código postal"></label></p>
+		<p><input type="submit" value="Enviar"></p>
+		<p>
+			ESTE TAN EN AZUL
+		</p>
+		<meter></meter>
+	</form>
+	<progress value="30" max="100">0%</progress>
+</body>
+
+</html>

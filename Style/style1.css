@@ -1,0 +1,79 @@
+* {
+    color: magenta;
+}
+
+a {
+    color: rgb(219, 219, 240);
+}
+
+div+p {
+    background-color: aqua;
+}
+
+h1 {
+    color: red;
+}
+
+.miclaseh2 {
+    width: 400px;
+    height: 25px;
+}
+
+h2 {
+    color: yellow;
+    border: blue;
+    background-color: green;
+    border-radius: 2px;
+    width: 90px;
+    height: 25px;
+    font-weight: bold;
+    margin: 50px;
+
+}
+
+pre {
+    color: mediumblue;
+}
+
+p {
+    background-color: cadetblue;
+}
+
+.parrafo {
+    font-size: medium;
+    color: orange;
+}
+
+#datos {
+    border: paleturquoise;
+    width: "500";
+    height: "300";
+    width: 50%;
+    height: 50%;
+    padding: auto;
+    border-color: yellow;
+    color: black;
+}
+
+*/ p {
+    color: red;
+}
+
+p {
+    color: blueviolet;
+}
+
+form:hover {
+    color: yellowgreen;
+    background-color: skyblue;
+}
+
+#color-blue {
+    color: rgb(219, 219, 240);
+}
+
+.color-red {
+    color: red;
+}
+
+/*h1 { color: grey !important}*/

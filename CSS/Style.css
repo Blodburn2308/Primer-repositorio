@@ -1,0 +1,68 @@
+* {
+    font-family: 'Montserrat' ´, cursive;
+    font-weight: 100;
+    font-size: 30px;
+    width: 120px;
+    height: 120px;
+}
+
+#cuadrado1 {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: mianimacion;
+    animation-duration: 4s;
+    position: absolute;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+
+#cuadrado2 {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    animation: mi2animacion 4s linear infinite 1s;
+}
+
+@keyframes mianimacion {
+
+    0%,
+    100% {
+        background-color: red;
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+
+    25%,
+    75% {
+        background-color: aqua;
+        transform: translate(50vw - 100px, 50vh - 100px) rotate(-180deg);
+    }
+
+    50% {
+        background-color: green;
+        transform: translate(calc(100vw - 200px), calc(100vh - 200px)) rotate(-360deg);
+    }
+
+}
+
+@keyframes mi2animacion {
+    0% {
+        transform: translate(-50%, -50%) translate(75px, 0px) rotate(0deg);
+    }
+
+    50% {
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, -50%) translate(75px, 0px) rotate(90deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translate(75px, 0px) rotate(180deg);
+        width: 100px;
+        height: 100px;
+    }
+}
